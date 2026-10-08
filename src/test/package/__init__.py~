@@ -1,0 +1,13 @@
+from kavallerie.plugins import Plugin
+from .doc import routes
+
+
+plugin = Plugin(
+    "uv.archive_view",
+    modules=["uv.archive_view"],
+    dependencies=[
+    ],
+    blueprints={
+        "routes": routes,
+    },
+)
